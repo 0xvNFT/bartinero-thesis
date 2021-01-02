@@ -14259,6 +14259,58 @@ a.text-dark:focus {
   transition: all 0.3s;
 }
 
+#post {
+  padding: 2rem 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+#post h2 {
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#post .disclaimer {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+#post .disclaimer p {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  color: black;
+  font-style: italic;
+}
+
+#post .form-control {
+  border: none;
+  background: #eaeaea;
+  border-radius: 4px;
+}
+
+#post .form-error {
+  font-size: 0.65rem;
+  padding-top: 0.5rem;
+  color: red;
+  font-style: italic;
+}
+
+#post .form-error-inline {
+  border: 1px solid red;
+}
+
+#post button {
+  margin-top: 1rem;
+  background-color: black;
+  border: 1px black solid;
+}
+
+#post .checkterms {
+  padding-top: 0.5rem;
+  color: #495057;
+}
+
 #register {
   display: flex;
   justify-content: center;
