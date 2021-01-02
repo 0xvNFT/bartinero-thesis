@@ -4,6 +4,11 @@
     display: flex;
     align-items: center;
     min-height: 600px;
+    //background-color: #f2f2f2;
+    background-image: url("/img/bart-hero-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     h1 {
         font-family: 'DM Sans', sans-serif;
@@ -11,6 +16,7 @@
         font-weight: bold;
         font-size: 4rem;
         padding-bottom: 1rem;
+        letter-spacing: -0.1rem;
     }
 
     .hero-cta {
@@ -64,6 +70,8 @@
 }
 
 #prodcat-slider {
+
+    padding-top: 2.5rem;
 
     h1 {
         font-family: 'DM Sans', sans-serif;

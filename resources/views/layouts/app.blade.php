@@ -75,7 +75,7 @@
                             <a href="{{ route('login') }}" class="nav-link">Log In</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('posts') }}" class="nav-link">Trade</a>
+                            <a href="{{ route('register') }}" class="nav-link">Trade</a>
                         </li>
                     @endguest
 

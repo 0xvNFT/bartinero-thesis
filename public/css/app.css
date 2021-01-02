@@ -14168,6 +14168,10 @@ a.text-dark:focus {
   display: flex;
   align-items: center;
   min-height: 600px;
+  background-image: url("/img/bart-hero-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #hero h1 {
@@ -14176,6 +14180,7 @@ a.text-dark:focus {
   font-weight: bold;
   font-size: 4rem;
   padding-bottom: 1rem;
+  letter-spacing: -0.1rem;
 }
 
 #hero .hero-cta {
@@ -14226,6 +14231,7 @@ a.text-dark:focus {
 }
 
 #prodcat-slider {
+  padding-top: 2.5rem;
   /* Slick Slide */
   /* Parent Slick Slide */
 }

@@ -5,7 +5,7 @@
 <section id="hero">
 
     <div class="container">
-        <h1>The barter hub for the<br>Las Piñas community</h1>
+        <h1>A hub for the Las Piñas<br>barter community.</h1>
         <div class="hero-cta">
             <a href="#short-info">Why barter?</a>
             <a href="/register">Start trading now</a>
@@ -82,6 +82,18 @@
 
 <section id="short-info">
     <div class="container">
+
+        <h1>Why barter?</h1>
+
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">
+                    <i class="fas fa-recycle"></i>
+                    <br>
+                    Zero-waste lifestyle.
+                </h1>
+            </div>
+        </div>
 
         <div class="wrapper">
 
