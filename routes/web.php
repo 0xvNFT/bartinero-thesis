@@ -23,6 +23,10 @@ Route::get('/', function () {
      return view('home');
 })->name('home');
 
+Route::get('/categories', function () {
+    return view('pages.categories');
+});
+
 Route::get('/dashboard', [DashboardController::class, 'index'])
 ->name('dashboard');
 // ->middleware('auth');
@@ -40,9 +44,7 @@ Route::post('/posts', [PostController::class, 'store']);
 
 // Route::post('/posts', [UploadController::class, 'uploadFile'])->name('posts');
 
-// Route::get('/', function () {
-//     return view('pages.index');
-// });
+
 
 // Route::get('/post', function () {
 //     return view('pages.post');
