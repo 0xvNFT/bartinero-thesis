@@ -14163,12 +14163,9 @@ a.text-dark:focus {
 }
 
 #hero {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
   display: flex;
   align-items: center;
-  min-height: 600px;
-  background-image: url("/img/bart-hero-bg.svg");
+  min-height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -14176,36 +14173,34 @@ a.text-dark:focus {
 
 #hero h1 {
   font-family: "DM Sans", sans-serif;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3.7rem;
   padding-bottom: 1rem;
   letter-spacing: -0.1rem;
+  color: black;
 }
 
 #hero .hero-cta {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 #hero .hero-cta a:nth-child(1) {
   font-family: "DM Sans", sans-serif;
-  color: #b8b8b8;
-  font-weight: bold;
+  color: black;
   padding: 0 1rem;
   text-decoration: none;
   padding: 0.75rem 1rem;
-  border: 1px solid #b8b8b8;
+  border: 1px solid black;
   border-radius: 4px;
   letter-spacing: 0.02rem;
-  margin: 0 0.5rem;
+  margin-right: 0.5rem;
 }
 
 #hero .hero-cta a:nth-child(2) {
   font-family: "DM Sans", sans-serif;
   color: white;
-  font-weight: bold;
   padding: 0 1rem;
   text-decoration: none;
   padding: 0.75rem 1rem;
@@ -14228,6 +14223,41 @@ a.text-dark:focus {
 
 #hero .slick-track {
   height: 400px;
+}
+
+#hero-byline {
+  padding: 3rem 0;
+  background-color: black;
+}
+
+#hero-byline h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+#hero-byline p {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  padding-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+#hero-byline .fa,
+#hero-byline .fas {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#hero-byline .byline-icon {
+  margin: 1rem;
+}
+
+#hero-byline .byline-text {
+  margin-left: 0.8rem;
 }
 
 #prodcat-slider {

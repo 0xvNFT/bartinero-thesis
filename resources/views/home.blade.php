@@ -5,11 +5,20 @@
 <section id="hero">
 
     <div class="container">
-        <h1>A hub for the Las Piñas<br>barter community.</h1>
-        <div class="hero-cta">
-            <a href="#short-info">Why barter?</a>
-            <a href="/register">Start trading now</a>
+
+        <div class="row align-items-center justify-content-center d-flex">
+            <div class="col-lg-5">
+                <h1>A hub for the<br>Las Piñas barter<br>community.</h1>
+                <div class="hero-cta">
+                    <a href="#short-info">Why barter?</a>
+                    <a href="/register">Start trading now</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="{{ asset('img/barter-arrows-alt.png') }}" alt="">
+            </div>
         </div>
+        
     </div>
 
 
@@ -20,6 +29,53 @@
         <div style="background-color: yellow">Test</div>
         <div style="background-color: green">Test</div>
     </div> --}}
+</section>
+
+<section id="hero-byline">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4 d-flex">
+
+                <div class="d-flex justify-content-center align-items-center byline-icon">
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <div class="byline-text">
+                    <h1>Post a deal</h1>
+                    <p>Barter old or new items. Even services.</p>
+                </div>
+                    
+            </div>
+
+            <div class="col-lg-4 d-flex">
+
+                <div class="d-flex justify-content-center align-items-center byline-icon">
+                    <i class="fas fa-mouse-pointer"></i>
+                </div>
+
+                <div class="byline-text">
+                    <h1>Choose an offer</h1>
+                    <p>Plenty of options to choose from.</p>
+                </div> 
+
+            </div>
+
+            <div class="col-lg-4 d-flex">
+
+                <div class="d-flex justify-content-center align-items-center byline-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                
+                <div class="byline-text">
+                    <h1>Trade with ease</h1>
+                    <p>Communicate within the site.</p>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <section id="prodcat-slider">
@@ -95,25 +151,6 @@
             </div>
         </div>
 
-        <div class="wrapper">
-
-            <div class="deal">
-                <h1>Post a deal.</h1>
-                <p>Join fellow Las Pineros in participating the community barter.</p>
-            </div>
-
-            <div class="match">
-                <h1>Find a match.</h1>
-                <p>Choose the best deal offers that suit you best.</p>
-            </div>
-
-            <div class="trade">
-                <h1>Trade with ease.</h1>
-                <p>Trade with Las Pineros hassle-free.</p>
-            </div>
-
-        </div>
-        
     </div>
 </section>
 
