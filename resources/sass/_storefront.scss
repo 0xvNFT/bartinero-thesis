@@ -64,6 +64,38 @@
 
 }
 
+// @media only screen and (min-width: 600px) {
+
+//     #hero {
+
+//         min-height: 100vh;
+//         padding: 1rem 0;
+
+//         h1 {
+//             text-align: center;
+//             font-size: 3.5rem;
+//         }
+    
+//         .hero-cta {
+    
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+    
+//             a:nth-child(1) {
+//                 margin: 0.5rem;
+//             }
+//             a:nth-child(2) {
+//                 margin: 0.5rem;
+//             }
+//         }
+
+//         img {
+//             padding: 2rem;
+//         }
+//     }
+// }
+
 #hero-byline {
     
     padding: 3rem 0;
@@ -88,7 +120,7 @@
         color: white;
     }
     .byline-icon {
-        margin: 1rem;
+        margin-right: 1rem;
     }
     .byline-text {
         margin-left: 0.8rem;

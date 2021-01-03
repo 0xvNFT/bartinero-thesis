@@ -35,7 +35,7 @@
     <div class="container">
         <div class="row justify-content-center">
 
-            <div class="col-lg-4 d-flex">
+            <div class="col-lg-4 d-flex align-items-baseline">
 
                 <div class="d-flex justify-content-center align-items-center byline-icon">
                     <i class="fas fa-plus"></i>
@@ -48,7 +48,7 @@
                     
             </div>
 
-            <div class="col-lg-4 d-flex">
+            <div class="col-lg-4 d-flex align-items-baseline">
 
                 <div class="d-flex justify-content-center align-items-center byline-icon">
                     <i class="fas fa-mouse-pointer"></i>
@@ -61,7 +61,7 @@
 
             </div>
 
-            <div class="col-lg-4 d-flex">
+            <div class="col-lg-4 d-flex align-items-baseline">
 
                 <div class="d-flex justify-content-center align-items-center byline-icon">
                     <i class="fas fa-handshake"></i>
