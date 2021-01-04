@@ -14536,11 +14536,11 @@ a.text-dark:focus {
   padding-bottom: 3rem;
 }
 
-#featdeals {
+#featured-deals {
   padding: 2rem 0;
 }
 
-#featdeals h1 {
+#featured-deals h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
@@ -14548,7 +14548,7 @@ a.text-dark:focus {
   padding-bottom: 1rem;
 }
 
-#featdeals a {
+#featured-deals a {
   font-family: "DM Sans", sans-serif;
   color: #b8b8b8;
   margin-bottom: 1rem;
@@ -14557,12 +14557,12 @@ a.text-dark:focus {
   text-decoration: none;
 }
 
-#featdeals a:hover {
+#featured-deals a:hover {
   color: black;
   transition: all 0.3s;
 }
 
-#featdeals .featured-deals {
+#featured-deals .featured-deals {
   height: 400px;
   border: 1px solid black;
   border-radius: 4px;

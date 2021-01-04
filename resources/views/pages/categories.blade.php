@@ -129,7 +129,7 @@
     </div>
 </section>
 
-<section id="featdeals">
+<section id="featured-deals">
     <div class="container">
         <h1>Featured deals</h1>
 
