@@ -44,7 +44,7 @@
                         <li class="nav-item altnav">
                             <div class="dropdown">
 
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, {{ auth()->user()->fname }}!</button>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, {{ auth()->user()->firstname }}!</button>
 
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 

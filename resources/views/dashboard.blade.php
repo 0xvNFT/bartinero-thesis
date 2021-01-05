@@ -7,7 +7,7 @@
 
         <div class="nav justify-content-between">
             <div class="greeting">
-                <h1>Welcome, {{ auth()->user()->fname }} {{ auth()->user()->lname }}!</h1>
+                <h1>Welcome, {{ auth()->user()->fname }} {{ auth()->user()->lastname }}!</h1>
                 <p><i class="fas fa-location-arrow"></i>{{ auth()->user()->barangay }}</p>
             </div>
             <div class="tab justify-content-center align-items-center d-flex">
