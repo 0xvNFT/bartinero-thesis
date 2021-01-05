@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('category');
             $table->mediumText('body');
             $table->string('barter');
+            $table->string('file');
             $table->timestamps();
         });
     }

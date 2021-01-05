@@ -38,15 +38,15 @@ class RegisterController extends Controller
     public function store(Request $request) {
 
         $this->validate($request, [
-            'fname' => 'required|max:255',
-            'lname' => 'required|max:255',
+            'fname' => 'required|max:20|alpha',
+            'lname' => 'required|max:20|alpha',
             'gender' => 'required',
-            'address' => 'required|max:255',
+            'address' => 'required|max:140',
             'barangay' => 'required',
             'email' => 'required|email|max:255',
-            'mobile' => 'required|max:11',
+            'mobile' => 'required|max:11|numeric',
             'username' => 'required|max:15',
-            'password' => 'required|confirmed',
+            'password' => 'required|confirmed|min:8',
             //'tcagree' => 'required',
         ]);
 

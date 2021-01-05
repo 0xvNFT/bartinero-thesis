@@ -23,10 +23,11 @@ class PostController extends Controller
             'title' => 'required',
             'category' => 'required',
             'body' => 'required',
+            'file' => 'required',
             'barter' => 'required',
         ]);
 
-        $request->user()->posts()->create($request->only('title','category','body','barter'));
+        $request->user()->posts()->create($request->only('title','category','body','barter','file'));
 
         return back();
 
