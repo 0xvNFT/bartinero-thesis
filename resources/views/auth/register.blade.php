@@ -20,9 +20,9 @@
                     <div class="form-row">
                         <div class="form-group col-6">
 
-                            <input type="text" class="form-control @error('fname') form-error-inline @enderror" name="fname" id="fname" value="{{ old('fname') }}" placeholder="First Name">
+                            <input type="text" class="form-control @error('firstname') form-error-inline @enderror" name="firstname" id="firstname" value="{{ old('firstname') }}" placeholder="First Name">
 
-                            @error('fname')
+                            @error('firstname')
                                 <div class="form-error">
                                     {{ $message }}
                                 </div>
@@ -32,9 +32,9 @@
 
                         <div class="form-group col-6">
 
-                            <input type="text" class="form-control @error('lname') form-error-inline @enderror" name="lname" id="lname" value="{{ old('lname') }}" placeholder="Last Name">
+                            <input type="text" class="form-control @error('lastname') form-error-inline @enderror" name="lastname" id="lastname" value="{{ old('lastname') }}" placeholder="Last Name">
 
-                            @error('lname')
+                            @error('lastname')
                                 <div class="form-error">
                                     {{ $message }}
                                 </div>
@@ -46,7 +46,7 @@
                     {{-- Gender --}}
                     <div class="form-group">
 
-                        <select name="gender" id="gender" class="form-control @error('fname') form-error-inline @enderror" value="{{ old('gender') }}">
+                        <select name="gender" id="gender" class="form-control @error('gender') form-error-inline @enderror" value="{{ old('gender') }}">
                             <option value="" selected disabled>Gender</option>
                             <option value="Male" id="male">Male</option>
                             <option value="Female" id="female">Female</option>
