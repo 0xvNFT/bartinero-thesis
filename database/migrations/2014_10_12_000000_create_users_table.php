@@ -26,6 +26,7 @@ class CreateUsersTable extends Migration
             $table->bigInteger('mobile')->unique();
             $table->string('username')->unique();
             $table->string('password');
+            $table->string('avatar')->nullable();
             //$table->string('tcagree');
             $table->rememberToken();
             $table->timestamps();

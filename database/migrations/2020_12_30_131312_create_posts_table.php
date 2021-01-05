@@ -19,9 +19,7 @@ class CreatePostsTable extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('title');
             $table->string('category');
-            //$table->string('location');
-            //$table->binary('file');
-            $table->text('body');
+            $table->mediumText('body');
             $table->string('barter');
             $table->timestamps();
         });

@@ -11,49 +11,11 @@
             <div class="col-lg-6 justify-content-center">
 
                 <h2>What would you like to barter?</h2>
+                <p>You are posting from {{ auth()->user()->barangay }}</p>
 
                 <form action="{{ route('posts') }}" method="post" enctype="multipart/form-data">
                     
                     @csrf
-
-                    {{-- <div class="form-group">
-                        <p>{{ auth()->user()->barangay }}</p>
-                    </div> --}}
-
-                    {{-- Barangay
-                    <div class="form-group">
-                        
-                        <select name="location" id="location" class="form-control @error('location') form-error-inline @enderror" value="{{ old('location') }}">
-                            <option value="" selected disabled>Barangay</option>
-                            <option value="Brgy. Almanza Uno" id="brgy1">Brgy. Almanza Uno</option>
-                            <option value="Brgy. Almanza Dos" id="brgy2">Brgy. Almanza Dos</option>
-                            <option value="Brgy. BF International" id="brgy3">Brgy. BF International</option>
-                            <option value="Brgy. CAA" id="brgy4">Brgy. CAA</option>
-                            <option value="Brgy. Daniel Fajardo" id="brgy5">Brgy. Daniel Fajardo</option>
-                            <option value="Brgy. Elias Aldana" id="brgy6">Brgy. Elias Aldana</option>
-                            <option value="Brgy. Ilaya" id="brgy7">Brgy. Ilaya</option>
-                            <option value="Brgy. Manuyo Uno" id="brgy8">Brgy. Manuyo Uno</option>
-                            <option value="Brgy. Manuyo Dos" id="brgy9">Brgy. Manuyo Dos</option>
-                            <option value="Brgy. Pamplona Uno" id="brgy10">Brgy. Pamplona Uno</option>
-                            <option value="Brgy. Pamplona Dos" id="brgy11">Brgy. Pamplona Dos</option>
-                            <option value="Brgy. Pamplona Tres" id="brgy12">Brgy. Pamplona Tres</option>
-                            <option value="Brgy. Pilar" id="brgy13">Brgy. Pilar</option>
-                            <option value="Brgy. Pulang Lupa Uno" id="brgy14">Brgy. Pulang Lupa Uno</option>
-                            <option value="Brgy. Pulang Lupa Dos" id="brgy15">Brgy. Pulang Lupa Dos</option>
-                            <option value="Brgy. Talon Uno" id="brgy16">Brgy. Talon Uno</option>
-                            <option value="Brgy. Talon Dos" id="brgy17">Brgy. Talon Dos</option>
-                            <option value="Brgy. Talon Tres" id="brgy18">Brgy. Talon Tres</option>
-                            <option value="Brgy. Talon Kuatro" id="brgy19">Brgy. Talon Kuatro</option>
-                            <option value="Brgy. Zapote" id="brgy20">Brgy. Zapote</option>
-                        </select>
-
-                        @error('location')
-                            <div class="form-error">
-                                {{ $message }}
-                            </div>
-                        @enderror
-
-                    </div> --}}
 
                     {{-- Listing title --}}
                     <div class="form-group">
@@ -92,7 +54,7 @@
                     </div>
 
                     {{-- Upload Image --}}
-                    <div class="form-group">
+                    <div class="form-group upload-image">
                         <input type="file" name="file" id="file" class="form-control-file">
                     </div>
 
@@ -130,6 +92,7 @@
                 
                 </form>
 
+              
             </div>
 
         </div>

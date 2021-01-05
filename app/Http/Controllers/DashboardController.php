@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class DashboardController extends Controller
 {
@@ -13,7 +14,13 @@ class DashboardController extends Controller
 
     public function index() {
 
-        return view('dashboard');
+        $posts = Post::get();
+
+        return view('dashboard', [
+            'posts' => $posts
+        ]);
+
+  
 
     }
 
