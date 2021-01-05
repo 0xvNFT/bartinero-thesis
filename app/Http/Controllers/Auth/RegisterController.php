@@ -38,8 +38,8 @@ class RegisterController extends Controller
     public function store(Request $request) {
 
         $this->validate($request, [
-            'fname' => 'required|max:20|alpha',
-            'lname' => 'required|max:20|alpha',
+            'firstname' => 'required|max:20|alpha',
+            'lastname' => 'required|max:20|alpha',
             'gender' => 'required',
             'address' => 'required|max:140',
             'barangay' => 'required',
@@ -51,8 +51,8 @@ class RegisterController extends Controller
         ]);
 
         User::create([
-            'fname' => $request->fname,
-            'lname' => $request->lname,
+            'firstname' => $request->firstname,
+            'lastname' => $request->lastname,
             'gender' => $request->gender,
             'address' => $request->address,
             'barangay' => $request->barangay,
