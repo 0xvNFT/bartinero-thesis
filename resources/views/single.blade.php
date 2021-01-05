@@ -43,7 +43,7 @@
     
                     </div>
 
-                    <form action="{{ route('categories.likes', $post->id) }}" method="post">
+                    <form action="/" method="post">
                         @csrf
                         <button type="submit"><i class="fas fa-heart"></i></button><span>{{ $post->likes->count() }}</span>
                     </form>
