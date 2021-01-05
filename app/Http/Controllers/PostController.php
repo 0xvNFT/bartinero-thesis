@@ -28,21 +28,14 @@ class PostController extends Controller
 
         $request->user()->posts()->create($request->only('title','category','body','barter'));
 
-        //$request->user()->posts()->create([
-        //    'title' => $request->title,
-        //    'category' => $request->category,
-        //    'body' => $request->body,
-        //    'barter' => $request->barter,
-        //]);
-
         return back();
 
         auth()->user()->posts()->create();
 
     }
 
-    // public function uploadFile(Request $request) {
-    //     $request->file->store('public');
-    //     return "File has been uploaded successfully.";
-    // }
+    public function uploadFile(Request $request) {
+        $request->file->store('public');
+        return "File has been uploaded successfully.";
+    }
 }
