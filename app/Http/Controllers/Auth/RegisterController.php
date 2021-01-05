@@ -44,7 +44,7 @@ class RegisterController extends Controller
             'address' => 'required|max:140',
             'barangay' => 'required',
             'email' => 'required|email|max:255',
-            'mobile' => 'required|max:11|numeric',
+            'mobile' => 'required|max:11',
             'username' => 'required|max:15',
             'password' => 'required|confirmed|min:8',
             //'tcagree' => 'required',
