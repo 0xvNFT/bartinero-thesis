@@ -140,7 +140,9 @@
             @foreach ($posts as $post)
 
             <div class="card">
+
                 <img src="{{ asset('img/img-placeholder.png') }}" alt="" class="card-img-top">
+
                 <div class="card-body">
                     <a href="" class="user-link">{{ $post->user->username }}</a>
                     <span>• {{ $post->created_at->diffForHumans() }}</span>
@@ -148,6 +150,11 @@
                         <a href="">{{ $post->title }}</a>
                     </h5>
                 </div>
+
+                <form action="" method="post">
+                    <button type="submit"><i class="fas fa-heart"></i></button>
+                </form>
+
             </div>
 
             @endforeach

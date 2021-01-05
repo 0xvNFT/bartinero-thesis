@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="byline-text">
-                    <h1>Post AAAa deal.</h1>
+                    <h1>Post a deal.</h1>
                     <p>Barter old or new items. Even services.</p>
                 </div>
                     

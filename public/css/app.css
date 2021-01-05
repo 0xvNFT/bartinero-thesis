@@ -14454,6 +14454,101 @@ a.text-dark:focus {
   margin: 0 1rem;
 }
 
+@media (max-width: 771px) {
+  #hero {
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  #hero h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  #hero .hero-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hero .hero-cta a:nth-child(1) {
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  #hero .hero-cta a:nth-child(2) {
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  #hero img {
+    padding: 2rem;
+  }
+
+  #hero-byline {
+    padding: 2rem;
+    background-color: black;
+  }
+
+  #hero-byline .d-flex {
+    display: none;
+  }
+
+  #hero-byline h1 {
+    font-size: 1.25rem;
+  }
+
+  #hero-byline p {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    padding-top: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  #hero-byline .fa,
+  #hero-byline .fas {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  #hero-byline .byline-icon {
+    margin-right: 1rem;
+  }
+
+  #hero-byline .byline-text {
+    margin-left: 0.8rem;
+  }
+
+  #about {
+    padding: 1rem;
+  }
+
+  #about h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  #about .row {
+    padding-top: 1rem;
+  }
+
+  #about .row .card {
+    margin-bottom: 1.5rem;
+  }
+
+  #about .about-cta {
+    padding: 0;
+  }
+
+  #about .about-cta a {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
 #post {
   padding: 2rem 0;
   font-family: "DM Sans", sans-serif;
@@ -14462,7 +14557,19 @@ a.text-dark:focus {
 #post h2 {
   font-weight: 600;
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#post p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#post .fa,
+#post .fas {
+  padding-right: 0.4rem;
+  font-size: 0.7rem;
 }
 
 #post .disclaimer {
@@ -14508,11 +14615,23 @@ a.text-dark:focus {
   margin-top: 1rem;
   background-color: black;
   border: 1px black solid;
+  width: 100%;
 }
 
 #post .checkterms {
   padding-top: 0.5rem;
   color: #495057;
+}
+
+@media (max-width: 771px) {
+  #post {
+    padding: 2rem 1rem;
+  }
+
+  #post h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
 }
 
 #categories-hero {

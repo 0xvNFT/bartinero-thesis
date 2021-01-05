@@ -41434,8 +41434,8 @@ jQuery(document).ready(function ($) {
 });
 jQuery(document).ready(function ($) {
   $('.cat-selector').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     autoplay: false,
     autoplaySpeed: 3000,
     dots: false,

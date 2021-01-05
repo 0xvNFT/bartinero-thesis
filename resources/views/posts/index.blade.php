@@ -11,7 +11,8 @@
             <div class="col-lg-6 justify-content-center">
 
                 <h2>What would you like to barter?</h2>
-                <p>You are posting from {{ auth()->user()->barangay }}</p>
+                
+                <p class="location"><i class="fas fa-location-arrow"></i>You are posting from {{ auth()->user()->barangay }}</p>
 
                 <form action="{{ route('posts') }}" method="post" enctype="multipart/form-data">
                     
