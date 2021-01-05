@@ -3,11 +3,13 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +23,12 @@ use App\Http\Controllers\Auth\RegisterController;
 */
 
 Route::get('/', function () {
-     return view('home');
+    
+    $posts = Post::get();
+
+        return view('home', [
+            'posts' => $posts
+        ]);
 })->name('home');
 
 Route::get('/categories', function () {
@@ -31,6 +38,8 @@ Route::get('/categories', function () {
 Route::get('/dashboard', [DashboardController::class, 'index'])
 ->name('dashboard');
 // ->middleware('auth');
+
+Route::get('/categories', [CategoryController::class, 'index'])->name('categories');
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 

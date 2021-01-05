@@ -38,7 +38,7 @@
 
                     @auth
                         <li class="nav-item">
-                            <a href="/categories" class="nav-link">Categories</a>
+                            <a href="{{ route('categories') }}" class="nav-link">Categories</a>
                         </li>
 
                         <li class="nav-item altnav">
@@ -66,7 +66,7 @@
 
                     @guest
                         <li class="nav-item">
-                            <a href="/categories" class="nav-link">Categories</a>
+                            <a href="{{ route('categories') }}" class="nav-link">Categories</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('register') }}" class="nav-link">Sign Up</a>

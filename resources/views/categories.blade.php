@@ -133,10 +133,35 @@
     <div class="container">
         <h1>Featured deals</h1>
 
-        <div class="featured-deals align-items-center justify-content-center d-flex">
-            <h1>Min 8 items with AJAX Load More Button. Filter: All items.</h1>
-        </div>
+        <div class="wrapper">
 
+            @if ($posts->count())
+            
+            @foreach ($posts as $post)
+
+            <div class="card">
+                <img src="{{ asset('img/img-placeholder.png') }}" alt="" class="card-img-top">
+                <div class="card-body">
+                    <a href="" class="user-link">{{ $post->user->username }}</a>
+                    <span>• {{ $post->created_at->diffForHumans() }}</span>
+                    <h5 class="card-title">
+                        <a href="">{{ $post->title }}</a>
+                    </h5>
+                </div>
+            </div>
+
+    
+
+            @endforeach
+
+            @else
+
+            <p>There are currently no active listings.</p>
+
+            @endif
+
+        </div>
+            
     </div>
 
 </section>
