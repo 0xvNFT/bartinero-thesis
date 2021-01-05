@@ -11,4 +11,13 @@ class Post extends Model
     protected $fillable = [
         'category', 'title', 'body', 'barter'
     ];
+
+    public function user() {
+
+        return $this->belongsTo(User::class);
+
+    }
+
+
+
 }

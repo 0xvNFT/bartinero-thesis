@@ -3,17 +3,36 @@
     padding: 2rem 0;
     font-family: 'DM Sans', sans-serif;
 
+    h1 {
+        font-weight: bold;
+    }
+
+    h3 {
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    p {
+        color: #b8b8b8;
+        font-weight: bold;
+    }
+
+    .fa, .fas {
+        padding-right: 0.5rem;
+    }
+
     .nav {
 
         padding-bottom: 2rem;
 
+
         .tab {
 
             .tablinks {
-                margin-right: 2rem;
+                margin-left: 2rem;
                 border: none;
                 background: none;
-                text-align: left;
+                //text-align: right;
                 font-weight: bold;
                 letter-spacing: 0.01rem;
                 padding: 0;
@@ -24,19 +43,41 @@
                 color: black;
                 transition: 0.3s;
             }
-        
         }
     }
 
-    .tabco {
-        border-radius: 4px;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .dashboard-grid {
         border: 1px solid black;
         padding: 2rem;
+        border-radius: 4px;
+        min-height: 400px;
+    }
 
-        h1 {
-            font-weight: bold;
+    .archive-post {
+
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background: #eaeaea;
+
+        p {
+            color: black;
+            font-weight: 500;
         }
+    }
 
+    .account-grid {
+        border: 1px solid black;
+        padding: 2rem;
+        border-radius: 4px;
+        min-height: 300px;
+        margin-top: 2rem;
     }
 
 }

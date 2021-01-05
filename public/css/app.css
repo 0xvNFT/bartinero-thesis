@@ -14589,15 +14589,33 @@ a.text-dark:focus {
   font-family: "DM Sans", sans-serif;
 }
 
+#dashboard h1 {
+  font-weight: bold;
+}
+
+#dashboard h3 {
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+#dashboard p {
+  color: #b8b8b8;
+  font-weight: bold;
+}
+
+#dashboard .fa,
+#dashboard .fas {
+  padding-right: 0.5rem;
+}
+
 #dashboard .nav {
   padding-bottom: 2rem;
 }
 
 #dashboard .nav .tab .tablinks {
-  margin-right: 2rem;
+  margin-left: 2rem;
   border: none;
   background: none;
-  text-align: left;
   font-weight: bold;
   letter-spacing: 0.01rem;
   padding: 0;
@@ -14609,14 +14627,38 @@ a.text-dark:focus {
   transition: 0.3s;
 }
 
-#dashboard .tabco {
-  border-radius: 4px;
-  border: 1px solid black;
-  padding: 2rem;
+#dashboard .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
-#dashboard .tabco h1 {
-  font-weight: bold;
+#dashboard .dashboard-grid {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 4px;
+  min-height: 400px;
+}
+
+#dashboard .archive-post {
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #eaeaea;
+}
+
+#dashboard .archive-post p {
+  color: black;
+  font-weight: 500;
+}
+
+#dashboard .account-grid {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 4px;
+  min-height: 300px;
+  margin-top: 2rem;
 }
 
 #register {

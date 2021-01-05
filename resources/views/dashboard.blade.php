@@ -5,48 +5,56 @@
 <section id="dashboard">
     <div class="container">
 
-        <div class="nav">
-            <div class="tab">
+        <div class="nav justify-content-between">
+            <div class="greeting">
+                <h1>Welcome, {{ auth()->user()->fname }} {{ auth()->user()->lname }}!</h1>
+                <p><i class="fas fa-location-arrow"></i>{{ auth()->user()->barangay }}</p>
+            </div>
+            <div class="tab justify-content-center align-items-center d-flex">
                 <button class="tablinks" onclick="openCity('Deals')">Deals</button>
                 <button class="tablinks" onclick="openCity('Messages')">Messages</button>
                 <button class="tablinks" onclick="openCity('Account')">Account</button>
             </div>
         </div>
 
-        <div id="Deals" class="city">
+        <div class="wrapper">
 
-            <div class="greeting">
+            {{-- Posts --}}
+            <div class="dashboard-grid">
 
-                <h1>Welcome, {{ auth()->user()->fname }}!</h1>
+                <h3>Your active listings</h3>
 
                 @if ($posts->count())
-                    iterate
+                    @foreach ($posts as $post)
+
+                    <div class="archive-post">
+                        <a href="">{{ $post->user->username }}</a>
+                        <span>• {{ $post->created_at->diffForHumans() }}</span>
+                        <p>{{ $post->title }}</p>
+                    </div>
+
+                    
+
+                    @endforeach
                 @else
                     <p>You currently have no active listings.</p>
                     <a href="/register">Join the Las Piñas barter community</a>
                 @endif
+            </div>
+
+            {{-- Messages --}}
+            <div class="dashboard-grid d-flex justify-content-center align-items-center">
+
+                <h1>No new messages.</h1>
 
             </div>
 
         </div>
 
-        <div id="Messages" class="city" style="display: none">
+        {{-- Account --}}
+        <div class="account-grid">
 
-            <div class="greeting">
-
-                <h1>You have no new messages.</h1>
-
-            </div>
-
-        </div>
-
-        <div id="Account" class="city" style="display: none">
-
-            <div class="greeting">
-
-                <h1>Set up your account.</h1>
-
-            </div>
+            <h1>Account</h1>
 
             <div class="avatar">
 
@@ -56,13 +64,14 @@
                         <input type="file" name="image" id="avatar">
                         <input type="submit" value="upload">
                     </form>
-                </div>
+                </div> 
 
             </div>
 
         </div>
 
-        <div class="tab-content">
+        <div class="row">
+
 
             
 
@@ -70,6 +79,12 @@
 
         </div>
 
+
+
+       
+            
+
+      
     
 
     </div>
