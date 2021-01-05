@@ -15,8 +15,6 @@ class CategoryController extends Controller
 
         $posts = Post::paginate(8);
 
-        dd($posts);
-
         return view('categories', [
             'posts' => $posts
         ]);

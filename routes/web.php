@@ -24,7 +24,7 @@ use App\Post;
 
 Route::get('/', function () {
     
-    $posts = Post::get();
+    $posts = Post::take(8)->get();
 
         return view('home', [
             'posts' => $posts

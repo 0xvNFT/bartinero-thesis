@@ -150,9 +150,9 @@
                 </div>
             </div>
 
-    
-
             @endforeach
+
+            {{ $posts->links() }}
 
             @else
 
