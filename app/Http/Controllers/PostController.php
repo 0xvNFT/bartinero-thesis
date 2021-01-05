@@ -17,17 +17,24 @@ class PostController extends Controller
 
     }
 
+    public function show(Post $post) {
+        return view('posts.show', [
+            'post' => $post
+        ]);
+    }
+
     public function store(Request $request) {
 
         $this->validate($request, [
             'title' => 'required',
             'category' => 'required',
             'body' => 'required',
-            'file' => 'required',
+            // 'file' => 'required',
             'barter' => 'required',
         ]);
 
-        $request->user()->posts()->create($request->only('title','category','body','barter','file'));
+        // $request->user()->posts()->create($request->only('title','category','body','barter','file'));
+        $request->user()->posts()->create($request->only('title','category','body','barter'));
 
         return back();
 
@@ -35,8 +42,13 @@ class PostController extends Controller
 
     }
 
-    public function uploadFile(Request $request) {
-        $request->file->store('public');
-        return "File has been uploaded successfully.";
+    public function destroy(Post $post) {
+        $post->delete();
+        return back();
     }
+
+    // public function uploadFile(Request $request) {
+    //     $request->file->store('public');
+    //     return "File has been uploaded successfully.";
+    // }
 }

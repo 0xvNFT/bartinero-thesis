@@ -7,7 +7,7 @@
 
         <div class="nav justify-content-between">
             <div class="greeting">
-                <h1>Welcome, {{ auth()->user()->fname }} {{ auth()->user()->lastname }}!</h1>
+                <h1>Welcome, {{ auth()->user()->firstname }} {{ auth()->user()->lastname }}!</h1>
                 <p><i class="fas fa-location-arrow"></i>{{ auth()->user()->barangay }}</p>
             </div>
             <div class="tab justify-content-center align-items-center d-flex">
@@ -32,14 +32,22 @@
                         <span>• {{ $post->created_at->diffForHumans() }}</span>
                         <p>{{ $post->title }}</p>
                     </div>
+                    <form action="{{ route('dashboard', $post) }}" method="post">
 
-                    
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Delete</button>
 
+                    </form>
                     @endforeach
+                    
                 @else
                     <p>You currently have no active listings.</p>
                     <a href="/register">Join the Las Piñas barter community</a>
                 @endif
+
+                    
+
             </div>
 
             {{-- Messages --}}

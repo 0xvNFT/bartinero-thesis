@@ -1,22 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Post;
 
 use Illuminate\Http\Request;
-use App\Post;
-use App\Like;
 
-class CategoryController extends Controller
+class SingleController extends Controller
 {
-    // public function __construct() {
-    //     $this->middleware(['auth']);
-    // }
-
     public function index() {
 
-        $posts = Post::paginate(8);
+        $posts = Post::get();
 
-        return view('categories', [
+        return view('single', [
             'posts' => $posts
         ]);
     }

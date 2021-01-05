@@ -19,9 +19,11 @@ class DashboardController extends Controller
         return view('dashboard', [
             'posts' => $posts
         ]);
+    }
 
-  
-
+    public function destroy(Post $post) {
+        $post->delete();
+        return back();
     }
 
 }

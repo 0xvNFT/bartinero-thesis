@@ -141,7 +141,10 @@
 
             <div class="card">
 
-                <img src="{{ asset('img/img-placeholder.png') }}" alt="" class="card-img-top">
+                <div class="card-top">
+                    <p>{{ $post->category }}</p>
+                    <img src="{{ asset('img/img-placeholder.png') }}" alt="" class="card-img-top">
+                </div>
 
                 <div class="card-body">
                     <a href="" class="user-link">{{ $post->user->username }}</a>
@@ -151,9 +154,12 @@
                     </h5>
                 </div>
 
-                <form action="" method="post">
+                <form action="{{ route('categories.likes', $post->id) }}" method="post">
+                    @csrf
                     <button type="submit"><i class="fas fa-heart"></i></button>
                 </form>
+
+                <span>{{ $post->likes->count() }}</span>
 
             </div>
 

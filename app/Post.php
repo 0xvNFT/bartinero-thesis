@@ -3,13 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Like;
 
 class Post extends Model
 {
     protected $guarded = [];  
 
     protected $fillable = [
-        'category', 'title', 'body', 'barter', 'file'
+        'category', 'title', 'body', 'barter'
     ];
 
     public function user() {
@@ -18,6 +19,8 @@ class Post extends Model
 
     }
 
-
+    public function likes() {
+        return $this->hasMany(Like::class);
+    }
 
 }
