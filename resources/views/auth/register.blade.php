@@ -128,7 +128,7 @@
                             <input type="number" class="form-control @error('mobile') form-error-inline @enderror" name="mobile" id="mobile" placeholder="Mobile Number" value="{{ old('mobile') }}">
 
                             @error('mobile')
-                                <div class="form-error">
+                                <div class="form-error" role="alert">
                                     {{ $message }}
                                 </div>
                             @enderror

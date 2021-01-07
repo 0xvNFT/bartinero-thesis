@@ -52,6 +52,8 @@ Route::get('/categories/{post}', [CategoryController::class, 'show'])->name('pos
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
+///Route::
+
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
@@ -76,3 +78,6 @@ Route::put('/categories/{id}/likes', [PostLikeController::class, 'store'])->name
 // Route::get('/post', function () {
 //     return view('pages.post');
 // });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

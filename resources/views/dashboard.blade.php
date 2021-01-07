@@ -11,6 +11,7 @@
                 <p><i class="fas fa-location-arrow"></i>{{ auth()->user()->barangay }}</p>
             </div>
             <div class="tab justify-content-center align-items-center d-flex">
+                <a href="/bartinerochat">Chat</a>
                 <button class="tablinks" onclick="openCity('Deals')">Deals</button>
                 <button class="tablinks" onclick="openCity('Messages')">Messages</button>
                 <button class="tablinks" onclick="openCity('Account')">Account</button>
